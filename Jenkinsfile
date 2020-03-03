@@ -7,9 +7,8 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
-                    mkdir natesh
                     touch natesh.txt
-                    cp natesh.txt /var/jenkins_home/workspace/test2
+                    cp natesh.txt /var/jenkins_home/workspace/test2/natesh
                     ls -lah
                 '''
             }
